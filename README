@@ -3,3 +3,9 @@ docker build -t markymo5115/my-django:1.0.0 .
 
 to run the container:
 docker run --publish 8000:8080 --detach --name working-django markymo5115/my-django:1.0.0
+
+go to localhost:8000 to see the django default screen
+
+to clean-up
+docker stop working-django
+docker rm working-django
